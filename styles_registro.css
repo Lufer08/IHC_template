@@ -1,0 +1,94 @@
+body {
+ 
+    min-height: 100%;
+    background: linear-gradient(to right, #ffffff 0%, #b2d8b2 100%); /* Gradiente de blanco a verde pastel de izquierda a derecha */
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+/*HEADER*/
+header {
+    background: #008000; /* Verde */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.logo img {
+    height: 50px; /* Ajusta esto según el tamaño de tu imagen */
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: #333333; /* Nuevo color del header al pasar el ratón */
+}
+/*MAIN*/
+.registro-container h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center; /* Centra el texto del título */
+    margin-top: 0; /* Opcional: reduce o elimina el margen superior si es necesario */
+    color: #008000; /* Opcional: Cambia el color del título si lo deseas */
+    padding-bottom: 10px; /* Opcional: Añade un poco de espacio debajo del título */
+}
+
+.registro-container {
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #008000;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#form-registro > * {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#form-registro > *:focus {
+    border-color: #008000;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 128, 0, 0.6);
+    outline: none;
+}
+
+#form-registro > button {
+    cursor: pointer;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#form-registro > button:hover {
+    background-color: #006400;
+}
+#mensaje {
+    text-align: center; /* Centra el texto del mensaje */
+    width: 100%; /* Asegura que el div ocupe todo el ancho disponible */
+    margin-top: 10px; /* Añade un poco de espacio sobre el mensaje */
+    font-size: 1em; /* Ajusta el tamaño del texto según necesites */
+}

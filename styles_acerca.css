@@ -1,0 +1,104 @@
+body {
+ 
+    min-height: 100%;
+    background: linear-gradient(to right, #ffffff 0%, #b2d8b2 100%); /* Gradiente de blanco a verde pastel de izquierda a derecha */
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+/*Header*/
+header {
+    background: #008000; /* Verde */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: #333333; /* Nuevo color del header al pasar el ratón */
+}
+
+
+/*Main*/
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+p {
+    width: 60%;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section img {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 400px; /* Limita el tamaño máximo de la imagen */
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #008000; /* Verde */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hace que cada enlace aparezca en una nueva línea */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #333333;
+}

@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100%;
+    background: linear-gradient(to right, #ffffff 0%, #b2d8b2 100%); /* Gradiente de blanco a verde pastel de izquierda a derecha */
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+/*HEADER*/
+header {
+    background: #008000; /* Verde */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.logo img {
+    height: 50px; /* Ajusta esto según el tamaño de tu imagen */
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: #333333; /* Nuevo color del header al pasar el ratón */
+}
+
+/*MAIN*/
+.image-gallery {
+    background-color: #5fad5f; /* Verde oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: center;
+    gap: 75px; /* Incrementa la separación entre las imágenes */
+    margin: 20px; /* Espaciado externo */
+}
+
+.image-item {
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    gap: 20px;
+}
+
+.feature-text {
+    width: 50%;
+}
+
+.feature-image {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.feature-image img {
+    max-width: 300px; /* Asegúrate de que la imagen no sobrepase su contenedor */
+    height: auto;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+#contact-form > * {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+}
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.contact-image img {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    max-width: 300px; /* Limita el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#contenedor-reseñas {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+.reseña {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+.reseña:last-child {
+    border-bottom: none;
+}
+
+#boton-abrir-formulario {
+    background-color: #5fad5f; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Tipo de display */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen exterior */
+    cursor: pointer; /* Tipo de cursor */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+    transition-duration: 0.4s; /* Duración de la transición */
+}
+#boton-abrir-formulario:hover {
+    background-color: #00733a; /* Color al pasar el ratón por encima */
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#nombre, #reseña {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+}
+#enviar-reseña {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#enviar-reseña:hover {
+    background-color: #45a049;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #008000; /* Verde */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block; /* Hace que cada enlace aparezca en una nueva línea */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #333333;
+}
+
